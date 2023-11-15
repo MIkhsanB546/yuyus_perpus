@@ -26,6 +26,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="<?php echo site_url('Welcome/buku')?>">Buku</a></li>
             <li><a class="dropdown-item" href="<?php echo site_url('Welcome/penerbit')?>">Penerbit</a></li>
+            <li><a class="dropdown-item" href="<?php echo site_url('Welcome/pengadaan')?>">Pengadaan</a></li>
           </ul>
         </li>
       </ul>

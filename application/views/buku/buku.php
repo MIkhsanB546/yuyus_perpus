@@ -4,10 +4,17 @@
     
   </div>
   <div class="card-body">
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tambahdata">
-      Tambah Data
-    </button>
-    <a href="<?php echo site_url('Welcome/pencarianbuku')?>" class="btn btn-outline-primary">Search 🔎</a>
+		<div class="d-flex justify-content-between">
+
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tambahdata">
+				Tambah Data
+			</button>
+			<!-- <a href="<?php echo site_url('Welcome/pencarianbuku')?>" class="btn btn-outline-primary">Search 🔎</a> -->
+			<form method="post" class="d-flex" action="<?php echo site_url('Welcome/buku'); ?>">
+					<input type="text" for="search-btn" name="cari" placeholder="Judul Buku" class="form-control me-2">
+					<button class="btn btn-outline-primary" id="search-btn" type="submit">Search</button>
+			</form>
+		</div>
 
     <!-- Modal tambah data -->
     <div class="modal fade" id="tambahdata" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -49,6 +56,8 @@
       </div>
     </div>
 
+		
+
     <table class="table table-bordered mt-3">
       <thead>
         <tr>
@@ -63,9 +72,9 @@
       </thead>
       <tbody>
         <?php
-        if (!empty($DataPencarianBuku)) {
+        if (!empty($GetDataCariBuku)) {
 
-          foreach ($DataPencarianBuku as $Read) {
+          foreach ($GetDataCariBuku as $Read) {
         ?>
             <tr>
               <th scope="row"><?php echo $Read->id_buku ?></th>

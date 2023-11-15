@@ -1,5 +1,5 @@
 <div class="card">
-  <h5 class="card-header">Selamat Datang di Buku Kami</h5>
+  <h5 class="card-header">Penerbit</h5>
   <div class="card-body">
 
     <!-- Button Tambah -->
@@ -56,6 +56,7 @@
           <th scope="col">ID</th>
           <th scope="col">Nama</th>
           <th scope="col">Alamat</th>
+          <th scope="col">Kota</th>
           <th scope="col">Telepon</th>
           <th scope="col">Tools</th>
         </tr>

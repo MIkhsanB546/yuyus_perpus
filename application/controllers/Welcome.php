@@ -40,7 +40,11 @@ class Welcome extends CI_Controller {
 	// Data buku
 	public function buku()
 	{
-		$data['DataPencarianBuku']	=$this->MSudi->GetData('buku');
+		//search
+		$cari = $this->input->post('cari');
+		$data['GetDataCariBuku'] = $this->MSudi->GetCariBuku($cari)->result();
+
+		$data['DataBuku']	=$this->MSudi->GetData('buku');
 		$data['content']='buku/buku';
 		$this->load->view('welcome_message', $data);
 	}
@@ -129,7 +133,15 @@ class Welcome extends CI_Controller {
 	}
 
 
+	public function pengadaan() {
+        // Load model dan data
+        $this->load->model('MSudi');
+        $data['pengadaan'] = $this->MSudi->get_pengadaan();
 
+        // Tampilkan view dengan data
+		$data['content']='pengadaan';
+        $this->load->view('welcome_message', $data);
+    }
 
 
 

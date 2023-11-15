@@ -40,4 +40,20 @@ class MSudi extends CI_Model
 		(penerbit LIKE '%$cari%')");
         return $query;
 	}
+
+    function GetCariPenerbit($cari)
+    {
+        $query = $this->db->query("SELECT * From penerbit where nama like '%$cari%' ");
+        return $query;
+	}
+
+    public function get_pengadaan() {
+        // Lakukan query database untuk mengambil data produk
+        $this->db->select('*');
+        $this->db->from('buku');
+        $this->db->order_by('nama_buku', 'DESC'); // Mengurutkan berdasarkan nama (contoh)
+        $query = $this->db->get();
+
+        return $query->result();
+    }
 }

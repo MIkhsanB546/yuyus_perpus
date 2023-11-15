@@ -4,7 +4,7 @@
         </div>
         <div class="container">
 			<div class="wrapper mt-4">
-				<form method="post" class="d-flex" action="<?php echo site_url('Welcome/pencarianbuku'); ?>">
+				<form method="post" class="d-flex" action="<?php echo site_url('Welcome/buku'); ?>">
                     <input type="text" for="search-btn" name="cari" placeholder="Judul Buku" class="form-control me-2">
                     <button class="btn btn-outline-primary" id="search-btn" type="submit">Search</button>
 					
