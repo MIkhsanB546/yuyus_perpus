@@ -37,6 +37,7 @@ class MSudi extends CI_Model
 		$query = $this->db->query("SELECT * FROM buku WHERE 
 		(nama_buku LIKE '%$cari%') OR 
 		(id_buku LIKE '%$cari%') OR 
+		(kategori LIKE '%$cari%') OR 
 		(penerbit LIKE '%$cari%')");
         return $query;
 	}

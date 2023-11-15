@@ -1,6 +1,6 @@
 <div class="card mt-5">
 	<div class="card-header">
-		Featured
+		<h3>Pengadaan</h3>
 	</div>
 	<div class="card-body">
 		<table class="table table-bordered table-hover">

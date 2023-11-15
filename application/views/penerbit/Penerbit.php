@@ -1,5 +1,5 @@
 <div class="card">
-  <h5 class="card-header">Penerbit</h5>
+  <h3 class="card-header">Penerbit</h3>
   <div class="card-body">
 
     <!-- Button Tambah -->
@@ -23,7 +23,7 @@
                 <input type="text" class="form-control" name="id_penerbit">
               </div>
               <div class="mb-3">
-                <label for="nama" class="col-form-label">Judul Buku:</label>
+                <label for="nama" class="col-form-label">Nama:</label>
                 <input type="text" class="form-control" name="nama">
               </div>
               <div class="mb-3">
@@ -93,23 +93,23 @@
                     <form action="<?php echo site_url('Welcome/penerbitUpdate'); ?>" method="post">
                       <div class="mb-3">
                         <label for="id_penerbit" class="col-form-label"> ID:</label>
-                        <input type="text" class="form-control" name="id_penerbit" value="<?php echo $ReadDS->id_penerbi; ?>">
+                        <input type="text" class="form-control" name="id_penerbit">
                       </div>
                       <div class="mb-3">
                         <label for="nama" class="col-form-label"> Nama:</label>
-                        <input type="text" class="form-control" name="nama" value="<?php echo $ReadDS->nama; ?>">
+                        <input type="text" class="form-control" name="nama">
                       </div>
                       <div class="mb-3">
                         <label for="alamat" class="col-form-label">Alamat:</label>
-                        <input type="text" class="form-control" name="alamat" value="<?php echo $ReadDS->alamat; ?>">
+                        <input type="text" class="form-control" name="alamat">
                       </div>
                       <div class="mb-3">
                         <label for="kota" class="col-form-label">Kota:</label>
-                        <input type="text" class="form-control" name="kota" value="<?php echo $ReadDS->kota; ?>">
+                        <input type="text" class="form-control" name="kota">
                       </div>
                       <div class="mb-3">
                         <label for="telepon" class="col-form-label">Telepon:</label>
-                        <input type="text" class="form-control" name="telepon" value="<?php echo $ReadDS->telepon; ?>">
+                        <input type="text" class="form-control" name="telepon">
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
